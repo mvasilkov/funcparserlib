@@ -126,7 +126,8 @@ class Parser(object):
             max = e.state.max
             tok = tokens[max] if max < len(tokens) else 'eof'
             raise ParserError(u'%s: %s' % (e.msg, tok),
-                              getattr(tok, 'pos', None))
+                              getattr(tok, 'pos', None),
+                              max)
 
     def __call__(self, tokens, s):
         return GrammarError('an abstract parser cannot be called')

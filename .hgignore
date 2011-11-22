@@ -2,11 +2,13 @@ syntax:glob
 MANIFEST
 build
 dist
+tags
 tmp
 tags
 .idea
 funcparserlib.egg-info
 examples/dot/*.png
+.idea
 *.pyc
 *.swp
 
